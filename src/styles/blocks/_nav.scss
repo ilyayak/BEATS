@@ -1,0 +1,25 @@
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: rem(8px);
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.nav__item{
+  font-size: rem(18px);
+  margin-right: rem(31px);
+  &:last-child{
+    margin-right: rem(0px);
+  }
+}
+.nav__link{
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav__link {
+  @include tablets{
+    display: none;
+  }
+}

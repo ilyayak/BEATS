@@ -1,0 +1,58 @@
+.player{
+position: relative;
+display: block;
+width: 100%;
+height: 100%;
+}
+.player-section__container{
+  margin: 0 auto;
+}
+.player__splash{
+  z-index: -5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: url(./images/decor/splashscreen.png)center center /cover no-repeat;
+}
+.player__controls{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: rem(35px);
+  background: $black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 rem(25px);
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+}
+.player__start{
+border: rem(14px) solid transparent;
+border-radius: rem(3px);
+  height: 0px;
+  width: 0px;
+  border-left-color: #fff;
+  border-right-width: 0px;
+  border-top-width: rem(11px);
+  border-bottom-width: rem(11px);
+
+  background: $black;
+  padding: 0;
+cursor: pointer;
+}
+.player__playback{
+  display: flex;
+  justify-content: center;
+}
+.player__playback-button{
+  cursor: pointer;
+background: #333333;
+height: rem(4px);
+width: rem(443px);
+border: none;
+}

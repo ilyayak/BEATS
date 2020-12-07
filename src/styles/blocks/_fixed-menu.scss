@@ -1,0 +1,44 @@
+.fixed-menu{
+  position: fixed;
+  top: 27%;
+  right: 3%;
+  z-index: $z-fixed-menu;
+  @include tablets{
+    display: none;
+  }
+  @include phones{
+    display: none;
+  }
+}
+.fixed-menu__item{
+  margin-bottom: rem(12px);
+  &_active{
+    .fixed-menu__link{
+      border-color: $red;
+      &:before{
+        background: $red;
+      }
+    }
+  }
+}
+.fixed-menu__link{
+  width: rem(18px);
+  height: rem(18px);
+  border-radius: 50%;
+  border: rem(1px) solid transparent;
+  display: block;
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    background: rgba($color: #292929, $alpha: .6);
+    width: rem(9px);
+    height: rem(9px);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+}

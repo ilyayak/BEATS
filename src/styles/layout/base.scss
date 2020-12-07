@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+  
+html {
+  font-size: $basefontsize;
+  @include tablets {
+    font-size: $basefontsize - 1px;
+  }
+  @include phones {
+    font-size: $basefontsize - 2px;
+  }
+  @include m-phones {
+    font-size: $basefontsize - 4px;
+  }
+}
+html,
+body{
+  height: 100%;
+}
+ul li{
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+address{
+  font-style: none;
+}
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  font-size: $basefontsize;
+  line-height: rem(30px);
+  color: #666666;
+
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+img {
+  display: block;
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-weight: 400;
+  line-height: rem(19px);
+ font-family:$play;
+  @include phones{
+    margin: rem(12px) auto;
+    font-size: rem(17px);
+  }
+  @include m-phones{
+    font-size: rem(15px);
+  }
+}
+a {
+  color: inherit;
+}
+.container {
+  width: 95%;
+  max-width: $containerWidth;
+  margin: 0 auto;
+  position: relative;
+}
+ footer {
+   position: relative;
+   width: 100%;
+ }
+.body-active_menu{
+  overflow: hidden;
+}

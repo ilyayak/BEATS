@@ -1,0 +1,54 @@
+$containerWidth: 1100px;
+$basefontsize: 16px;
+
+//colors
+$red:#E01F3D;
+$grey:#666666;
+$black:#292929;
+$white:#fff;
+
+//other
+$play:'Play',sans-serif;
+
+// z-indexes
+$z-fixed-menu:100;
+
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+$m-phones: 320px;
+
+@import 'layout/media.scss';
+@import 'layout/base.scss';
+@import 'layout/normalize.scss';
+@import 'layout/fonts.scss';
+
+
+
+@import 'blocks/_top-line.scss';
+@import 'blocks/_header.scss';
+@import 'blocks/_features.scss';
+@import 'blocks/_button.scss';
+@import 'blocks/_nav.scss';
+@import 'blocks/_contacts.scss';
+@import 'blocks/_section.scss';
+@import 'blocks/_headline.scss';
+@import 'blocks/_benefits.scss';
+@import 'blocks/_benefit.scss';
+@import 'blocks/_reviews.scss';
+@import 'blocks/_form.scss';
+@import 'blocks/_radio.scss';
+@import 'blocks/_fixed-menu.scss';
+@import 'blocks/_hamburger.scss';
+@import 'blocks/_footer.scss';
+@import 'blocks/_carousel.scss';
+@import 'blocks/_spec.scss';
+@import 'blocks/_dropdown.scss';
+@import 'blocks/_team.scss';
+@import 'blocks/_modal.scss';
+@import 'blocks/_products-menu.scss';
+@import 'blocks/_player.scss';
+
+
+
+

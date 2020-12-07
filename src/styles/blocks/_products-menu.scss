@@ -1,0 +1,46 @@
+.products-menu-section {
+  background: url(./images/decor/menuback.png) center center /cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.products-menu__item {
+  display: flex;
+  background: $black;
+
+  &.gray{
+    background: #666;
+  }
+  &.black{
+    background: #151515;
+  }
+  &.red{
+    background: #E01F3C;
+  }
+}
+
+.products-menu__title {
+  flex: 1;
+  position: absolute;
+  width: rem(100px);
+  text-decoration: none;
+  font-size: rem(36px);
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.products-menu__content {
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+}

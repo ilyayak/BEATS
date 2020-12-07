@@ -1,0 +1,30 @@
+
+.button{
+  cursor: pointer;
+  background: #E01F;
+  font-family: "play", sans-serif;
+  font-size: rem(16px);
+  line-height: rem(18px);
+  color: #fff;
+  text-decoration: none;
+  padding: rem(19px) rem(50px);
+  border-radius: rem(100px);
+  border-color: #E01F3D;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  &:hover{
+    background: #CA1B36;
+  }
+  &_transparent{
+    background: transparent;
+    &:hover{
+      color:$red;
+      background: transparent;
+    }
+  }
+}
+
+
+
+

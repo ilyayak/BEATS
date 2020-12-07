@@ -1,0 +1,122 @@
+.reviews__section{
+  position: relative;
+  @include m-phones{
+    margin-bottom: rem(22px); 
+  }
+  &:before{
+    position: absolute;
+    content: url(./images/decor/revcircle.png);
+    bottom: rem(-28px);
+    left: 5%;
+  @include m-phones{
+    display: none; 
+  }
+}}
+.reviews__display{
+  background: #F8FAF9;
+  padding: rem(42px); 
+  margin-bottom: rem(15px);
+  overflow: hidden;
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    width: rem(83px);
+    height: rem(83px);
+    background: #fff;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: rem(-61px);
+
+  }
+}
+.reviews__display-inner{
+  display: flex;
+  align-items: center;
+  @include tablets{
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+}
+.reviews__avatar{
+  width: rem(253px);
+  height: rem(264px);
+  margin-right: rem(40px);
+  @include tablets{
+    width: rem(140px);
+    height: rem(140px);
+    margin-right: 0;
+    margin-bottom: rem(32px);
+  }
+}
+.reviews__avatar-img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.review__item{
+  display: none;
+}
+.active.review__item{
+  display: block;
+  transition: .8s;
+}
+.reviews__content{
+  flex: 1;
+}
+.reviews__title{
+font-family: $play;
+font-size: rem(24px);
+font-weight: 700;
+margin-bottom: rem(27px);
+color:$black;
+@include tablets{
+  margin-bottom: rem(10px);
+}
+}
+.reviews__text{
+ margin-bottom: rem(38px);
+}
+.reviews__author{
+  font-family: $play;
+  font-size: 18;
+  font-weight: 700;
+  color: $black;
+}
+.reviews-switcher{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-switcher__link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+.reviews-switcher__img{
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.reviews-switcher__item{
+  margin-right: rem(15px);
+  width: rem(74px);
+  height: rem(74px);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: rem(4px) solid transparent;
+&.active {
+    background-color: $red;
+  };
+  &:last-child{
+    margin-right: rem(0px);
+  };
+}

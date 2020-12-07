@@ -1,0 +1,31 @@
+.headline{
+  text-align: center;
+}
+.headline__title{
+  margin-bottom: rem(20px);
+  font-family:$play;
+  @include phones{
+    font-size: rem(36px);
+    margin-bottom: rem(14px);
+  }
+  @include m-phones{
+    margin-top: rem(40px);
+    font-size: rem(30px);
+    margin-bottom: rem(8px);
+  }
+}
+.headline__subtitle{
+  font-family:"Play", sans-serif;
+  margin-bottom: rem(62px);
+  padding: 0 22%;
+  line-height: rem(19px);
+  @include phones{
+    padding: 0 2%;
+    margin-bottom: rem(28px);
+    font-size: rem(16px);
+  }
+  @include m-phones{
+    margin-bottom: rem(20px);
+    font-size: rem(15px);
+  }
+}

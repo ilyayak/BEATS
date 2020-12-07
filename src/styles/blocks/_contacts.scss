@@ -1,0 +1,20 @@
+.contacts-tel{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "play", sans-serif;
+  font-size: rem(21px);
+padding: rem(5px);
+}
+.contacts-tel__pic{
+  color:$black;
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(6px);
+}
+.contacts-tel__text{
+  white-space: nowrap;
+}
+.contacts-tel__icon{
+  flex-shrink: 0;
+}

@@ -1,0 +1,23 @@
+.header__img{
+  width: rem(40px);
+  height: rem(40px);
+}
+.header {
+  padding-top: rem(24px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 0%;
+  @include m-phones{
+    padding-top: rem(18px);
+  }
+}
+.header__nav{
+margin: 0 rem(20px);
+padding: rem(5px);
+}
+.contacts-tel.header__contacts-tel{
+  @include tablets{
+    display: none;
+  }
+}

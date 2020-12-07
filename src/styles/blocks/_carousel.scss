@@ -1,0 +1,126 @@
+
+.carousel{
+  .bx-wrapper{
+    border: 0 !important;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+.carousel__left{
+
+@include tablets{
+  width: 50%;
+margin-right: 0;
+  text-align: center;                                                                                                                                                                    
+}}
+
+.carousel__list{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+}
+.carousel__img{
+  max-width: 100%;
+  @include tablets{
+    text-align: center;
+  }
+}
+.headphones{
+  background: #F8FAF9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel__item{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+transition: .8s;
+  @include tablets{
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+}
+.carousel__right{
+width: 50%;
+max-width: rem(328px);
+@include tablets{
+  width: 100%;
+  max-width: 100%;
+}
+}
+.carousel__title{
+font-size: rem(36px);
+text-align: left;
+line-height: rem(42px);
+margin-bottom: rem(18px);
+@include tablets{
+  font-size: rem(32px);
+  text-align: center;
+}
+}
+.carousel__down{
+  display: flex;
+  align-items: center;
+  @include tablets{
+   padding: 0 22%;
+  }
+  @include phones{
+    padding: 0 5%;
+  }
+}
+.carousel__price{
+  flex: 2;
+  font-family: $play;
+  font-size: rem(32px);
+  color: $black;
+  text-transform: uppercase;
+  margin-right: rem(17px);
+}
+.carousel__feature{
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(24px);
+  text-align: center;
+
+  @include tablets{
+padding: 0 28%;
+justify-content: center;
+  }
+}
+.carousel__controls{
+  top: 38%;
+  position: relative;
+  @include tablets{
+    top: 20%;
+  }
+
+}
+.carousel__btn{
+  position: absolute;
+  width: rem(20px);
+  z-index: 20;
+}
+.carousel__btn_left{
+  left: 3%;
+  @include tablets{
+    left: 18%;
+  }
+}
+.carousel__btn_right{
+right: 3%;
+@include tablets{
+  right: 18%;
+}
+}
+.headphones-container{
+  position: relative;
+}
+
+

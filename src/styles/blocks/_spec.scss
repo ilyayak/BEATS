@@ -1,0 +1,13 @@
+.spec{
+  font-family: $play;
+  margin-right: rem(84px);
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.spec__text{
+  font-size: rem(18px);
+  line-height: rem(21px);
+  font-weight: 700;
+  color: #000;
+}

@@ -1,0 +1,32 @@
+.features{
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(70px);
+}
+.features__item{
+  font-family: "Play",sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: rem(18px);
+  width: rem(166px);
+  height: rem(56px);
+  margin-right: rem(7px);
+  &:last-child{
+    margin-right: rem(0px);
+  }
+}
+.features__icon{
+  width: rem(50px);
+  margin-right: rem(19px);
+}
+.features__pic{
+  max-width: 100%;
+}
+.features__text{
+  max-width: rem(114px);
+  display: flex;
+  flex-wrap: wrap;
+}

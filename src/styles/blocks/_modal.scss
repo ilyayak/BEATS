@@ -1,0 +1,33 @@
+.modal{
+ font-family: $play;
+ color: $black;
+
+  &.fancybox-content{
+    padding: 0 !important;
+    align-items: center;
+  }
+
+  .fancybox-button{
+    display: none;
+  }
+ display: none;
+}
+.error-modal{
+  color: red;
+}
+
+.modal__container{
+  background: #fff;
+  padding: rem(35px) rem(60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content{
+  margin-bottom: rem(15px);
+
+}
+.modal__button-container{
+text-decoration: none;
+}
