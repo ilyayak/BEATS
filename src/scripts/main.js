@@ -57,8 +57,6 @@ $(".reviews-switcher__link").click((e) => {
 
 });
 
-
-
 // accordeon(team)
 
 const openItem = item => {
@@ -245,4 +243,10 @@ const init = () => {
 }
 
 ymaps.ready(init);
+
+jQuery(document).ready(function () {
+  $('.slider').bxSlider();
+  onYouTubeIframeAPIReady();
+  validateFields();
+});
 
